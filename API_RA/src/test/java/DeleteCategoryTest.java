@@ -13,9 +13,9 @@ public class DeleteCategoryTest extends BaseTest {
         String message = given()
                 .header(AUTH, "Bearer " + ADMINTOKEN)
                 .when()
-                .delete("/categories/4")
+                .delete("/categories/2")
                 .then()
-                .assertThat().statusCode(200)
+                .assertThat().statusCode(400)
                 .extract().path("message");
         System.out.println(message);
         // .extract().response().as(ResponseForCategoryDto.class);

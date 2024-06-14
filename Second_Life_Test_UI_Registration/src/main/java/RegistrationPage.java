@@ -24,19 +24,19 @@ public class RegistrationPage extends BasePage {
     @FindBy(css = "[class = 'css-d1e3gg']")
     WebElement successButton;
 
-    public void fillInRegistrationForm() {
-        fillInputField(email, "loh@gmail.com");
-        fillInputField(password, "Vbnm123!");
-        fillInputField(repeatPassword, "Vbnm123!");
-        fillInputField(firstName, "Dan");
-        fillInputField(lastName, "Turuk");
+    private void fillInRegistrationForm() {
+        fillInputField(email, "lola@gmail.com");
+        fillInputField(password, "Vbnm124!");
+        fillInputField(repeatPassword, "Vbnm124!");
+        fillInputField(firstName, "Dana");
+        fillInputField(lastName, "Turuka");
     }
 
-    public void pressRegistrationButton() {
+    private void pressRegistrationButton() {
         clickOnElement(submitButton);
     }
 
-    public void pressRegistrationSuccessButton() {
+    private void pressRegistrationSuccessButton() {
         checkElementIsDisplayed(successButton);
         waitForVisibilityElement(successButton);
         waitForClickableElement(successButton);
