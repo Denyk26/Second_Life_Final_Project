@@ -11,8 +11,8 @@ public class LoginPositiveTest extends BaseTest {
 
     @Test
     void positiveLoginTest() {
-     homePage.goToLoginPage();
-     logInAndRegistrPage.fillInLoginFormAndPressOkButton();
-     homePage.checkWordsOnHomePage(WORDS_ON_HOME_PAGE,homePageWords);
+        homePage.goToLoginPage();
+        logInAndRegistrPage.fillInLoginFormAndPressOkButton();
+        homePage.checkWordsOnHomePage(WORDS_ON_HOME_PAGE,homePageWords);
     }
 }

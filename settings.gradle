@@ -1,4 +1,5 @@
 rootProject.name = 'Second_Life'
 include 'API_RA'
 include 'Second_Life_Test_UI'
+include 'UI_Tests'
 
